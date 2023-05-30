@@ -1,0 +1,73 @@
+
+
+body {
+    background: RGB(84,11,12)  ;
+
+    background-size: cover ; 
+    background-position: center ;
+}
+
+
+.bioPage {
+    margin: 0 auto ;
+ 
+
+
+}
+
+.bioDetails {
+    display: flex ; 
+    flex-direction: column ;
+    align-items: center ;
+    justify-content: center ;
+    margin: 50px auto ;
+    padding: 5% 8%;
+    width: 65% ;
+    max-width: 1200px ;
+    color: #fff ;
+    font-weight: 600 ;
+    box-shadow: 10px 10px 10px 20px rgba(0, 0, 0, 0.1);
+    background-color: rgba(66, 26, 113, 0.1); 
+    border-style: double ;
+    border-color: rgb(217, 235, 20) :
+    border-radius: 18%
+}
+
+.image-strip {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 20px; 
+  }
+  
+.image-strip img {
+    display: inline-block;
+    height: 200px; /* Adjust the height as needed */
+    animation: slide-strip 10s infinite linear; /* Adjust the duration and animation timing function as needed */
+  }
+
+  footer {
+    color: #fff ;
+  }
+  
+@keyframes slide-strip {
+    0% {
+      transform: translateX(100);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+
+@media screen and (max-width: 1024px) {
+    @keyframes slide-strip {
+        0% {
+          transform: translateX(100);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+}
+ 

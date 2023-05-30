@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    width: 90% ;
+    max-width: 1200px;
+    max-height: 60px; 
+    overflow: hidden;
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 10px 30px;
+    background-color: rgb(255, 255, 255) ;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7); 
+    border-radius: 20px;
+    margin: auto ;
+    margin-top: 10px ;
+
+
+}
+
+.navbarlogo {
+    display: flex; 
+    word-wrap: normal;
+    font-size: 24px; 
+    font-weight: 700;
+    text-decoration: none;
+    padding: 0px ;
+    margin: 0px ;
+    font-family: 'Rock Salt', cursive; 
+    color: rgba(234, 35, 35, 1.0)
+
+}
+
+.navbartoggle, #closenavbartoggle {
+    display: none ;
+    cursor: pointer;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    gap: 32px; 
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li {
+    font-weight: 200; 
+    font-size: 15px;
+    transition: 0.3s ease-in-out ;
+   
+}
+
+.nav-menu li:hover {
+    text-decoration: none;
+    color: rgba(234, 35, 35, 1.0)
+}
+
+@media screen and (max-width: 1024px) {
+    .navbar {
+        padding: 10px 20px; 
+    }
+   
+    #closenavbartoggle {
+        display: none;
+        background: none;
+        border: none;
+        font-size: 24px; 
+        color: darkslategrey
+    
+    }
+    .navbartoggle {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 24px; 
+        color: darkslategrey
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        right: 5%; 
+        top: 80px;
+        width: 100%;
+        max-width: 120px ; 
+        padding: 40px 0;
+        border-radius: 200px;
+        background-color: white; 
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7); 
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .navbarlogo {
+        font-size: 18px;
+    }
+}

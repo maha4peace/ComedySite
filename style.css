@@ -1,0 +1,203 @@
+*,body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Martel Sans', sans-serif;
+}
+a {
+    text-decoration:none;
+    color: inherit;
+    cursor: pointer;
+}
+p {
+    font-size: 14px;
+}
+
+/* Home page overlay */
+.heroOverlay {
+    /* background:#da2c43; */
+    background-image: url(./bgphotoblue.jpg);
+    background-position: top right center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 20px ;
+    padding-bottom: 60px;
+    min-height: 100vh;
+    
+}
+/* Hero Section */
+.heroSection {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 12vh;
+    padding: 100px 0;
+    text-align: center;
+}
+.heroSection > article {
+    width: 100%;
+    max-width: 530px;
+    display: flex;
+    flex-direction: column;
+}
+.heroSection > article > header > h1 {
+    font-size: 25px;
+    line-height: 50px;
+    margin-bottom: 1.5rem;
+    font-family: Rock Salt ; 
+}
+
+.heroSection > article > header > p {
+    margin-bottom: 1.8rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.heroButton {
+    padding: 10px 48px;
+    border-radius: 100px;
+    background: rgba(227, 71, 47, 0.988);
+    color: rgb(230, 230, 230) ;
+    color: inherit
+    border: 1px solid white;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 50px;
+    display: block;
+    width: fit-content;
+    margin: auto ;
+    transition: .3s ease-in-out;
+    outline: none;
+}
+
+.heroButton:hover {
+    background: none;
+    border: 1px solid rgb(230, 230, 230);
+    color:rgba(227, 71, 47, 0.988)
+   }
+   
+.heroSection .socialIcons {
+    justify-content: center;
+    margin-top: 40px;
+}
+/* Review Section Styles - Strict Related Class Selectors*/
+.reviewSection {
+    margin-top: 10vh;
+}
+.reviewTitle {
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 64px;
+}
+.reviewTitle h2 {
+    color: #da2c43;
+    font-size: 32px;
+}
+.reviewContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.reviewBox {
+    width: 90%;
+    max-width: 900px;
+    padding: 2rem;
+    box-shadow: 0px 0px 5px rgb(230, 230, 230);
+    border-radius: 20px;
+    transition: .3s ease-in-out;
+}
+.reviewBox:hover {
+    box-shadow: 0px 0px 15px rgb(230, 230, 230);
+}
+.reviewBoxTitle {
+    color: #da2c43;
+    font-size: 16px;
+    margin-bottom: 8px;
+    font-weight: 900;
+}
+.reviewStar {
+    color: #ffae42;
+    font-size: 18px;
+    font-weight: 900;
+    margin-bottom: 12px;
+}
+
+/* Footer styles applies to all pages */
+footer {
+    padding: 64px;
+}
+.socialIcons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+.socialIcons a {
+    width: 38px;
+    background: none;
+}
+.socialIcons a img {
+    width: 100%;
+}
+.socialIcons a img:hover {
+    opacity: 0.7;
+}
+
+/* Small Laptop / Tablet Screens */
+@media screen and (max-width: 1024px) {
+    .heroOverlay {
+        background-image: url(./bgphotoblue.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .heroSection {
+        width: 90%;
+        max-width: 1200px;
+        margin: auto;
+        margin-top: 5vh;
+        padding: 100px 0;
+        text-align: center;
+    }
+}
+/* Tablet Screens */
+@media screen and (max-width: 768px) {
+    .heroOverlay {
+        background-image: url(./bgphotoblue.jpg);
+        background-size: cover;
+        background-position: center;
+        background-position: 0% 20%;
+    }
+    .heroSection {
+        width: 90%;
+        max-width: 1200px;
+        margin: auto;
+        margin-top: 5vh;
+        padding: 100px 0;
+        text-align: center;
+    }
+}
+/* Mobile Screens */
+@media screen and (max-width: 500px) {
+    .heroOverlay {
+        background-image: url(./bgphotoblue.jpg);
+        background-size: cover;
+        background-position: 70% 20%;
+        padding: 10px;
+        padding-bottom: 10px;
+        min-height: 100vh;
+    }
+    .heroSection {
+        width: 90%;
+        max-width: 1200px;
+        margin: auto;
+        margin-top: 0vh;
+        padding: 100px 0;
+        text-align: center;
+    }
+    .heroSection > article > header > h1 {
+        font-size: 30px;
+    }
+}
