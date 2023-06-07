@@ -36,10 +36,29 @@
 
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
     .container {
+      background-position-x: left ; 
 
     }
+
+    .bioDetails {
+      margin-right: 220px ; 
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+  .container {
+    background-position-x: left bottom ; 
+
+  }
+
+  .bioDetails {
+    margin-right: 50px; 
+    mar
+  }
+
 
 }
 

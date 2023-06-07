@@ -1,13 +1,19 @@
-
+*,body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+  }
 
 .calendarSection {
     display: flex ; 
-    flex-direction: column ;
+    flex-direction: column;
     align-items: center ;
     justify-content: center ;
     margin: 50px auto ;
     width: 100% ;
     max-width: 1200px ;
+   
     
 }
 
@@ -19,11 +25,14 @@ article {
 }
 
 .calendarTitle {
-    font-size: 2.0rem;
+    font-family: "Rock Salt" ;
+    font-size: 1.5rem;
     font-weight: 400;
     margin: 0;
     padding: 20px;
-    color: rgb(210, 40, 40); 
+    color: rgb(210, 40, 40);
+
+   
 }
 
 .showBox {
