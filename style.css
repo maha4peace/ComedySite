@@ -18,7 +18,7 @@ p {
 /* Home page overlay */
 .heroOverlay {
     /* background:#da2c43; */
-    background-image: url(./bgphotoblue.jpg) ;
+    background-image: url(./redphotobg.jpg) ;
     background-size: cover;
     background-position: bottom right ; 
     background-repeat: no-repeat ;
@@ -33,7 +33,7 @@ p {
     width: 90%;
     max-width: 1200px;
     margin: auto;
-    margin-top: 60px;
+    margin-top: 60px; 
     padding: 80px 0px; 
     text-align: center;
 }
@@ -59,9 +59,8 @@ p {
 .heroButton {
     padding: 10px 48px;
     border-radius: 100px;
-    background: rgba(47, 74, 227, 0.988);
-    color: rgb(230, 230, 230) ;
-    color: inherit ;
+    background: yellow ; 
+    color: rgba(227, 71, 47, 0.988) ;
     border: 1px solid white ; 
     font-size: 18px;
     font-weight: 600;
@@ -74,9 +73,9 @@ p {
 }
 
 .heroButton:hover {
-    background: none;
+    background: rgba(227, 71, 47, 0.988) ;
     border: 1px solid rgb(230, 230, 230);
-    color:rgba(227, 71, 47, 0.988)
+    color:yellow ; 
    }
    
 .heroSection .socialIcons {
@@ -131,9 +130,10 @@ p {
 
 /* Footer styles applies to all pages */
 footer {
-    padding: 30px 20px;
-    background-color: rgba(234, 35, 35, 1.0) ;
-    color: white ; 
+    padding: 10px ;
+    margin: auto; 
+    background-color: orange ; 
+    
 
 }
 
@@ -158,7 +158,7 @@ footer {
 /* Small Laptop / Tablet Screens */
 @media screen and (max-width: 1024px) {
     .heroOverlay {
-        background-image: url(./bgphotoblue.jpg);
+        background-image: url(./redphotobg.jpg);
         background-size: cover;
         background-position: center;
     }
@@ -175,7 +175,7 @@ footer {
 /* Tablet Screens */
 @media screen and (max-width: 768px) {
     .heroOverlay {
-        background-image: url(./bgphotoblue.jpg);
+        background-image: url(./redphotobg.jpg);
         background-size: cover;
         background-position: center;
     
@@ -192,7 +192,7 @@ footer {
 /* Mobile Screens */
 @media screen and (max-width: 500px) {
     .heroOverlay {
-        background-image: url(./bgphotoblue.jpg);
+        background-image: url(./redphotobg.jpg);
         background-size: cover;
         background-position: 70% 20%;
         padding: 10px;

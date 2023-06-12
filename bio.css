@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: 'Martel Sans', sans-serif;
+
   
 }
 
@@ -11,9 +12,9 @@
 .container {
   background-image: url(./bio-image2.jpg);
   background-size: cover ;
-  background-repeat: no-repeat;
-  background-position: right bottom; 
-  display: flex;
+  background-repeat: no-repeat ;
+  background-position: right bottom ; 
+  display: flex ; 
   margin-top: 13px ;
 
 }
@@ -23,18 +24,19 @@
     flex-direction: column ;
     align-items: right ;
     justify-content: right ;
-    margin: 130px auto ;
-    margin-right: 200px; 
-    padding: 5% 8%;
+    margin: 95px auto ;
+    margin-right: 130px; 
+    padding: 4% 4% ;
     width: 90% ;
     max-width: 500px ;
-    font-weight: 900 ;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
-    border-color: rgb(217, 235, 20) ;  
-    border-radius: 18% ; 
-  
+    font-weight: 700 ;
+    text-align: center;
 
-}
+  }
+
+  footer {
+    background-color: none ; 
+  }
 
 @media screen and (max-width: 768px) {
     .container {

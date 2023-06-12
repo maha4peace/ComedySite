@@ -5,32 +5,35 @@
 }
 
 .navbar {
-    width: 90% ;
-    max-width: 1200px;
+    width: 100% ;
+    top: 0 ; 
+    left: 0 ; 
     max-height: 60px; 
     overflow: hidden;
     display: flex; 
     flex-direction: row;
     justify-content: space-between;
     align-items: center; 
-    padding: 10px 30px;
-    background-color: rgb(255, 255, 255) ;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7); 
-    border-radius: 20px ; 
-    margin: auto ;
-    margin-top: 10px ;
+    padding: 20px 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);  
+    margin: auto ; 
+    position: fixed; 
+    background-color:yellow; 
+    color: #da2c43; 
+
+
 }
 
 .navbarlogo {
     display: flex; 
     word-wrap: normal;
     font-size: 24px; 
-    font-weight: 700;
+    font-weight: 900;
     text-decoration: none;
     padding: 0px ;
     margin: 0px ;
     font-family: 'Rock Salt', cursive; 
-    color: rgba(234, 35, 35, 1.0)
+
 
 }
 
@@ -55,14 +58,14 @@
 
 .nav-menu li {
     font-weight: 200; 
-    font-size: 15px;
-    transition: 0.3s ease-in-out ;
+    font-size: 20px;
+    transition: 0.3s ease-in-out ; 
    
 }
 
 .nav-menu li:hover {
     text-decoration: none;
-    color: rgba(234, 35, 35, 1.0)
+    color: black; 
 }
 
 
@@ -132,7 +135,7 @@
 
     #nav-menu li {
         padding: 10px 0px ; 
-        
+
     
     }
 

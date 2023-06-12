@@ -18,5 +18,3 @@ closeNavBarToggle.addEventListener('click', () => {
 
 
 
-
-
