@@ -18,9 +18,9 @@ p {
 /* Home page overlay */
 .heroOverlay {
     /* background:#da2c43; */
-    background-image: url(./redphotobg.jpg) ;
+    background-image: url(./heropagebg.png) ;
     background-size: cover;
-    background-position: bottom right ; 
+    background-position: bottom right; 
     background-repeat: no-repeat ;
     width: 100% ; 
     height: 90vh ; 
@@ -34,11 +34,11 @@ p {
     max-width: 1200px;
     margin: auto;
     margin-top: 60px; 
-    padding: 80px 0px; 
+    padding: 150px 100px; 
     text-align: center;
 }
 .heroSection > article {
-    color: yellow; 
+    color: white ; 
     width: 100%;
     max-width: 530px;
     display: flex;
@@ -59,11 +59,11 @@ p {
 .heroButton {
     padding: 10px 48px;
     border-radius: 100px;
-    background: yellow ; 
+    background: white ; 
     color: rgba(227, 71, 47, 0.988) ;
-    border: 1px solid white ; 
+    border: 1px solid rgb(204, 137, 13) ;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 800;
     margin-top: 50px;
     display: block;
     width: fit-content;
@@ -132,9 +132,10 @@ p {
 footer {
     padding: 10px ;
     margin: auto; 
-    background-color: orange ; 
+    background-color: rgb(204, 137, 13) ; 
+    text-align: center;
+    color: white ; 
     
-
 }
 
 .socialIcons {
@@ -158,7 +159,7 @@ footer {
 /* Small Laptop / Tablet Screens */
 @media screen and (max-width: 1024px) {
     .heroOverlay {
-        background-image: url(./redphotobg.jpg);
+        background-image: url(./heropagebg.png);
         background-size: cover;
         background-position: center;
     }
@@ -175,7 +176,7 @@ footer {
 /* Tablet Screens */
 @media screen and (max-width: 768px) {
     .heroOverlay {
-        background-image: url(./redphotobg.jpg);
+        background-image: url(./heropagebg.png);
         background-size: cover;
         background-position: center;
     
@@ -192,7 +193,7 @@ footer {
 /* Mobile Screens */
 @media screen and (max-width: 500px) {
     .heroOverlay {
-        background-image: url(./redphotobg.jpg);
+        background-image: url(./heropagebg.png);
         background-size: cover;
         background-position: 70% 20%;
         padding: 10px;
