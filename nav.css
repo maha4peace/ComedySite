@@ -20,6 +20,7 @@
     position: fixed; 
     background-color:#940c0c; 
     color: white ; 
+    z-index: 100; 
 
 
 }
