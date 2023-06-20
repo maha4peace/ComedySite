@@ -6,6 +6,10 @@
     align-items: center;
     gap: 10px;
     padding-bottom: 50px;
+    background-image: url(./layingclaudia.jpg);
+    background-size: cover;
+    background-position: bottom right; 
+    background-repeat: no-repeat ;
     }
 
 .parent > div { 
@@ -16,12 +20,12 @@
       }
   
 .contact { 
-          margin-top: 50px; 
-          height: 160px;
-          text-align: center; 
-          padding: 40px;
-          color: rgba(47, 74, 227, 0.988);
+          margin-top: 100px ; 
+          text-align: center ; 
+          padding: 40px ;
+          
       } 
+      
 .form { 
         height: 500px; 
       } 

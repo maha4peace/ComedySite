@@ -82,6 +82,8 @@ p {
     justify-content: center;
     margin-top: 40px;
 }
+
+
 /* Review Section Styles - Strict Related Class Selectors*/
 .reviewSection {
     margin-top: 10vh;
@@ -90,6 +92,7 @@ p {
     text-align: center;
     width: 90%;
     max-width: 500px;
+    padding-top: 50px; 
     margin: auto;
     margin-bottom: 64px;
 }
@@ -102,6 +105,7 @@ p {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-bottom: 50px; 
     gap: 20px;
 }
 .reviewBox {
@@ -195,7 +199,7 @@ footer {
     .heroOverlay {
         background-image: url(./heropagebg.png);
         background-size: cover;
-        background-position: 70% 20%;
+        background-position: 50% 20%;
         padding: 10px;
         padding-bottom: 10px;
         min-height: 100vh;
@@ -204,11 +208,28 @@ footer {
         width: 90%;
         max-width: 1200px;
         margin: auto;
-        margin-top: 0vh;
         padding: 100px 0;
         text-align: center;
+        
     }
-    .heroSection > article > header > h1 {
-        font-size: 25px;
+    .heroSection > article > header > h1  {
+        font-size: 28px;
+        margin-top: 45px; 
+        margin-right: 150px; 
+        
     }
+
+    .heroLinks {
+        margin-right: 150px; 
+    }
+
+   
+}
+
+@media screen and (max-width: 350px) {
+    .heroSection > article > header > h1  {
+        font-size: 22px;
+        
+    }
+
 }

@@ -22,8 +22,9 @@
     color: white ; 
     z-index: 100; 
 
-
 }
+
+
 
 .navbarlogo {
     display: flex; 
@@ -70,6 +71,8 @@
     font-size: 25px; 
     font-weight: 300; 
 }
+
+
 
 
 /* Small Laptops / large tablets */
