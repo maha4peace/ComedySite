@@ -83,6 +83,28 @@ p {
     margin-top: 40px;
 }
 
+.hero-video-container {
+    text-align: center;
+    font-size:larger;
+    font-family: ;
+    margin: auto ;
+    margin-top: 20px ; 
+    
+
+}
+.video-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 20px; 
+    text-align: center;
+}
+  
+h1 {
+    font-family: "Rock Salt" ;
+}
+  
 
 /* Review Section Styles - Strict Related Class Selectors*/
 .reviewSection {
