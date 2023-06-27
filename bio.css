@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Martel Sans', sans-serif;
+ 
 
   
 }
@@ -10,7 +10,7 @@
 
 
 .container {
-  background-image: url(./biopagebg.png);
+  background-image: url(./biopagebg-2.webp);
   background-size: cover ;
   background-repeat: no-repeat ;
   background-position: left bottom ; 
@@ -61,10 +61,4 @@
   }
 
 
-}
-
-
-
-
-
- 
+} 

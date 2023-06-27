@@ -17,8 +17,7 @@ p {
 
 /* Home page overlay */
 .heroOverlay {
-    /* background:#da2c43; */
-    background-image: url(./heropagebg.png) ;
+    background-image: url(./heropagebg-2.webp) ;
     background-size: cover;
     background-position: bottom right; 
     background-repeat: no-repeat ;
@@ -26,16 +25,18 @@ p {
     height: 90vh ; 
     padding: 20px ; 
     padding-bottom: 60px ; 
+
 }
 
 /* Hero Section */
 .heroSection {
     width: 90%;
-    max-width: 1200px;
+    max-width: 100%;
     margin: auto;
     margin-top: 60px; 
     padding: 150px 100px; 
     text-align: center;
+    
 }
 .heroSection > article {
     color: white ; 
@@ -49,9 +50,11 @@ p {
     line-height: 50px;
     margin-bottom: 1.5rem;
     font-family: "Rock Salt" ;
+    color: rgb(204, 137, 13) ;
+
 }
 
-.heroSection > article > header > p {
+.heroSection > article > header > p { 
     margin-bottom: 1.8rem;
     font-size: 1rem;
     font-weight: 600;
@@ -70,6 +73,7 @@ p {
     margin: auto ;
     transition: .3s ease-in-out;
     outline: none;
+    
 }
 
 .heroButton:hover {
@@ -86,24 +90,24 @@ p {
 .hero-video-container {
     text-align: center;
     font-size:larger;
-    font-family: ;
     margin: auto ;
     margin-top: 20px ; 
+    width: 100%; 
+    max-width: 1200px;
+    color:rgb(204, 137, 13) ;
     
-
 }
-.video-container {
+
+.video-container iframe {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row ;
+    justify-content: space-between ;
+    align-items: flex-start;
     grid-gap: 20px; 
     text-align: center;
+
 }
-  
-h1 {
-    font-family: "Rock Salt" ;
-}
+
   
 
 /* Review Section Styles - Strict Related Class Selectors*/
@@ -117,10 +121,12 @@ h1 {
     padding-top: 50px; 
     margin: auto;
     margin-bottom: 64px;
+
 }
 .reviewTitle h2 {
     color: #da2c43;
     font-size: 32px;
+    font-family: "Rock Salt";
 }
 .reviewContainer {
     display: flex;
@@ -185,7 +191,7 @@ footer {
 /* Small Laptop / Tablet Screens */
 @media screen and (max-width: 1024px) {
     .heroOverlay {
-        background-image: url(./heropagebg.png);
+        background-image: url(./heropagebg-2.webp);
         background-size: cover;
         background-position: center;
     }
@@ -202,7 +208,7 @@ footer {
 /* Tablet Screens */
 @media screen and (max-width: 768px) {
     .heroOverlay {
-        background-image: url(./heropagebg.png);
+        background-image: url(./heropagebg-2.webp);
         background-size: cover;
         background-position: center;
     
@@ -217,19 +223,19 @@ footer {
     }
 }
 /* Mobile Screens */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 575px) {
     .heroOverlay {
-        background-image: url(./heropagebg.png);
+        background-image: url(./heropagebg-2.webp);
         background-size: cover;
-        background-position: 50% 20%;
-        padding: 10px;
+        background-position: center;
+        padding: 10px; 
         padding-bottom: 10px;
-        min-height: 100vh;
+        min-height: 100vh; 
     }
     .heroSection {
         width: 90%;
         max-width: 1200px;
-        margin: auto;
+        margin: auto; 
         padding: 100px 0;
         text-align: center;
         
@@ -245,8 +251,13 @@ footer {
         margin-right: 150px; 
     }
 
+    iframe {
+        width: 100%;
+      }
+
    
 }
+
 
 @media screen and (max-width: 350px) {
     .heroSection > article > header > h1  {
