@@ -55,6 +55,7 @@
     margin: 0;
     padding: 0;
     z-index: 10; 
+   
     
 }
 
@@ -62,6 +63,8 @@
     font-weight: 200; 
     font-size: 20px;
     transition: 0.3s ease-in-out ; 
+    font-family:  "Rock Salt" ; 
+    
    
 }
 
@@ -75,7 +78,8 @@
 
 
 
-/* Small Laptops / large tablets */
+/* Small Laptops / large tablets */ 
+
 
 
 @media screen and (max-width: 1024px) {
@@ -110,6 +114,8 @@
         padding: 40px 0;
         background-color: rgb(255, 255, 255) ;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7); 
+        color: #940c0c; 
+       
     }
 }
 
@@ -117,10 +123,8 @@
     .navbarlogo {
         font-size: 18px;
     }
-}
 
-@media screen and (max-width: 450px) {
-    #nav-menu {
+    .nav-menu {
         max-width: 100% ;
         height: calc(100vh - 20px); 
         display: none;
@@ -135,12 +139,64 @@
         background-color: rgb(255, 255, 255) ; 
         box-shadow: none ; 
         gap: 30px; 
+        
       
 
     }
 
-    #nav-menu li {
+    .nav-menu li {
         padding: 10px 0px ; 
+        color: #940c0c; 
+
+    
+    }
+
+    .navbar {
+        width: 100% ; 
+        max-width: 100% ; 
+        box-shadow: none;
+        border-radius: 0px; 
+        position: fixed ; 
+        top: 0 ; 
+        margin: 0 ; 
+    }
+
+    #closenavbartoggle {
+        font-size: 40px ; 
+    }
+
+    .heroOverlay{
+        padding: 0px; 
+
+    }
+
+}
+
+
+@media screen and (max-width: 450px) {
+    .nav-menu {
+        max-width: 100% ;
+        height: calc(100vh - 20px); 
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center ;
+        position: fixed;
+        right: 0%; 
+        top: 60px; 
+        width: 100%;
+        margin: 0% ; 
+        background-color: rgb(255, 255, 255) ; 
+        box-shadow: none ; 
+        gap: 30px; 
+        
+      
+
+    }
+
+    .nav-menu li {
+        padding: 10px 0px ; 
+        color: #940c0c; 
 
     
     }

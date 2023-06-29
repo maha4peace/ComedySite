@@ -16,8 +16,6 @@
   background-position: left bottom ; 
   display: flex ; 
   margin-top: 13px ;
-
-
 }
 
 .bioDetails {
@@ -32,6 +30,7 @@
     max-width: 500px ;
     font-weight: 700 ;
     text-align: center;
+  
 
   }
 
@@ -50,14 +49,10 @@
 }
 
 @media screen and (max-width: 450px) {
-  .container {
-    background-position-x: left bottom ; 
-
-  }
+  
 
   .bioDetails {
     margin-right: 50px; 
-    mar
   }
 
 

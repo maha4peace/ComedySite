@@ -111,7 +111,9 @@ form select {
 }
 
 @media screen and (max-width: 480px) {
-      
+      .parent {
+            background-position:  70% ;
 
       }
 
+}

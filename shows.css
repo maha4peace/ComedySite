@@ -56,10 +56,12 @@
 .showName {
     font-size: 2.6em ; 
     
+    
 }
 
 .showPlace {
     font-size: 1.5em; 
+    
 }
 
 
@@ -74,6 +76,20 @@
 }
 
 @media screen and (max-width: 500px) {
-    
+    .showDate {
+      font-size: 2.0em;
+    }
+
+    .showTime {
+      font-size: 1.5em; 
+    }
+
+    .showName {
+      font-size: 2.1em;
+    }
+
+    .showPlace {
+      font-size: 1.0em; 
+    }
 
 }

@@ -1,6 +1,8 @@
 *,body {
     padding: 0;
     margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
     font-family: 'Martel Sans', sans-serif;
 }
@@ -34,7 +36,7 @@ p {
     max-width: 100%;
     margin: auto;
     margin-top: 60px; 
-    padding: 150px 100px; 
+    padding: 150px 150px; 
     text-align: center;
     
 }
@@ -50,8 +52,7 @@ p {
     line-height: 50px;
     margin-bottom: 1.5rem;
     font-family: "Rock Salt" ;
-    color: rgb(204, 137, 13) ;
-
+   
 }
 
 .heroSection > article > header > p { 
@@ -59,6 +60,8 @@ p {
     font-size: 1rem;
     font-weight: 600;
 }
+
+
 .heroButton {
     padding: 10px 48px;
     border-radius: 100px;
@@ -81,6 +84,7 @@ p {
     border: 1px solid rgb(230, 230, 230);
     color:yellow ; 
    }
+
    
 .heroSection .socialIcons {
     justify-content: center;
@@ -94,7 +98,7 @@ p {
     margin-top: 20px ; 
     width: 100%; 
     max-width: 1200px;
-    color:rgb(204, 137, 13) ;
+    
     
 }
 
@@ -107,6 +111,8 @@ p {
     text-align: center;
 
 }
+
+
 
   
 
@@ -243,7 +249,7 @@ footer {
     .heroSection > article > header > h1  {
         font-size: 28px;
         margin-top: 45px; 
-        margin-right: 150px; 
+        margin-right: 180px; 
         
     }
 
@@ -254,6 +260,10 @@ footer {
     iframe {
         width: 100%;
       }
+    
+    .heroButton {
+        padding: 10px; 
+    }
 
    
 }
