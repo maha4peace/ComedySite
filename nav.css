@@ -23,7 +23,7 @@
     position: fixed; 
     background-color:#940c0c; 
     color: white ; 
-    z-index: 100; 
+    z-index: 100 ; 
 
 }
 
@@ -85,12 +85,12 @@
 
 
 
-/* @media screen and (max-width: 1024px) {  */
-    /* .navbar {  */
+@media screen and (max-width: 1024px) { 
+    .navbar { 
         padding: 10px 20px; 
     }
    
-    /* #closenavbartoggle { */
+    #closenavbartoggle {
         display: none;
         background: none;
         border: none;
@@ -98,16 +98,16 @@
         color: darkslategrey
     
     }
-    /* .navbartoggle {  */
-        display: block;
+    .navbartoggle { 
+        display: flex;
         background: none;
         border: none;
         font-size: 24px; 
         color: darkslategrey ;
     }
 
-    /* .nav-menu { */
-        display: flex;
+    .nav-menu {
+        display: none;
         flex-direction: column;
         position: absolute;
         right: 5%; 
@@ -120,9 +120,9 @@
         
        
     }
+}
 
-
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
     .navbarlogo {
         font-size: 18px;
     }
