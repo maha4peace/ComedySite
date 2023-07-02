@@ -45,6 +45,7 @@
 .navbartoggle, #closenavbartoggle {
     display: none ;
     cursor: pointer;
+    
 }
 
 .nav-menu {
@@ -95,7 +96,7 @@
         background: none;
         border: none;
         font-size: 24px; 
-        color: darkslategrey
+        color:  white ; 
     
     }
     .navbartoggle { 
@@ -103,7 +104,7 @@
         background: none;
         border: none;
         font-size: 24px; 
-        color: darkslategrey ;
+        color: white ; 
     }
 
     .nav-menu {
