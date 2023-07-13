@@ -6,9 +6,10 @@
     box-sizing: border-box;
     font-family: 'Martel Sans', sans-serif;
 }
+
 a {
     text-decoration:none;
-    color: inherit;
+    color: inherit; 
     cursor: pointer;
 }
 p {
@@ -19,12 +20,10 @@ p {
 .heroOverlay {
     background-image: url(./heropagebg-2.webp) ;
     background-size: cover;
-    background-position: bottom right; 
+    background-position: center; 
     background-repeat: no-repeat ;
     width: 100% ; 
-    height: 90vh ; 
-    padding: 20px ; 
-    padding-bottom: 60px ; 
+    
 }
 
 /* Hero Section */
@@ -32,7 +31,7 @@ p {
     width: 90%;
     max-width: 100%;
     margin: auto;
-    margin-top: 60px; 
+    /* margin-top: 60px;  */
     padding: 150px 150px; 
     text-align: center;
     
@@ -44,11 +43,13 @@ p {
     display: flex;
     flex-direction: column;
 }
-.heroSection > article > header > h1 {
-    font-size: 30px;
+.heroSection > article > header > h1#heroheader {
+    font-size: 3vw;
     line-height: 50px;
     margin-bottom: 1.5rem;
     font-family: "Rock Salt" ;
+
+    
    
 }
 
@@ -88,26 +89,10 @@ p {
     margin-top: 40px;
 }
 
-.hero-video-container {
-    text-align: center;
-    font-size:larger;
-    margin: auto ;
-    margin-top: 20px ; 
-    width: 100%; 
-    max-width: 1200px;
-    
-    
+#heroheader {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
 }
 
-.video-container iframe {
-    display: flex;
-    flex-direction: row ;
-    justify-content: space-between ;
-    align-items: flex-start;
-    grid-gap: 20px; 
-    text-align: center;
-
-}
 
 /* Review Section Styles - Strict Related Class Selectors*/
 .reviewSection {
@@ -161,9 +146,8 @@ p {
 
 /* Footer styles applies to all pages */
 footer {
-    padding: 10px ; 
+    padding: 20px ; 
     margin: auto; 
-    margin-top: 20px;
     background-color: rgb(204, 137, 13) ; 
     text-align: center;
     color: white ; 
@@ -188,18 +172,23 @@ footer {
     opacity: 0.7;
 }
 
+
 /* Small Laptop / Tablet Screens */
-@media screen and (max-width: 1024px) {
+@media screen and (min-width:  1500px) {
     .heroOverlay {
-        background-image: url(./heropagebg-2.webp);
-        background-size: cover;
-        background-position: center;
+        background-position: 100% auto; 
     }
+    
+}
+
+@media screen and (max-width: 1024px) {
+    
+
     .heroSection {
         width: 90%;
         max-width: 1200px;
         margin: auto;
-        margin-top: 5vh;
+        /* margin-top: 5vh;  */
         padding: 100px 0;
         text-align: center;
     }
@@ -207,42 +196,40 @@ footer {
 
 /* Tablet Screens */
 @media screen and (max-width: 768px) {
-    .heroOverlay {
-        background-image: url(./heropagebg-2.webp);
-        background-size: cover;
-        background-position: center;
     
-    }
     .heroSection {
         width: 90%;
-        max-width: 1200px;
+        max-width: 100%;
         margin: auto;
-        margin-top: 5vh;
+        /* margin-top: 5vh;  */
         padding: 100px 0;
         text-align: center;
     }
 }
+
 /* Mobile Screens */
-@media screen and (max-width: 575px) {
+  @media screen and (max-width: 575px) {
     .heroOverlay {
-        background-image: url(./heropagebg-2.webp);
+        background-image: url(./heropagebg-2.webp) ;
         background-size: cover;
-        background-position: center;
-        padding: 10px; 
-        padding-bottom: 10px;
-        min-height: 100vh; 
+        background-position: center center; 
+        background-repeat: no-repeat ;
+        width: 100% ; 
+        
     }
+
+    
     .heroSection {
         width: 90%;
-        max-width: 1200px;
+        max-width: 100%;
         margin: auto; 
-        padding: 100px 0;
+        /* padding: 100px 0; */
         text-align: center;
         
     }
     .heroSection > article > header > h1  {
         font-size: 28px;
-        margin-top: 45px; 
+         margin-top: 45px;  
         margin-right: 180px; 
         
     }
@@ -252,21 +239,11 @@ footer {
     }
 
     iframe {
+        
         width: 100%;
       }
     
     .heroButton {
         padding: 10px; 
     }
-
-   
-}
-
-
-@media screen and (max-width: 350px) {
-    .heroSection > article > header > h1  {
-        font-size: 22px;
-        
-    }
-
-}
+  }
