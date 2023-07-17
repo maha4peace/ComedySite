@@ -23,57 +23,56 @@ p {
     background-position: center; 
     background-repeat: no-repeat ;
     width: 100% ; 
+    height: 100dvh; 
     border: 10px solid black ; 
+    
     
 }
 
 /* Hero Section */
 
 .heroSection {
-    width: 90%;
+    width: 100%;
     max-width: 100%;
-    margin: auto;
-    /* margin-top: 60px;  */
+    margin: auto; 
     padding: 150px 150px; 
     text-align: center;
     
 }
-.heroSection > article {
+.heroSection > article.wrapper {
     color: white ; 
-    width: 100%;
-    max-width: 530px;
-    display: flex;
+    display: flex;  
     flex-direction: column;
+    justify-content: flex-start ;
+    align-items: flex-start ;
+    margin: 15% ; 
+   
 }
+
+
 .heroSection > article > header > h1 {
     font-size: 3vw;
-    line-height: 50px;
-    margin-bottom: 1.5rem;
-    font-family: "Rock Salt" ;
+    line-height: 50px; 
+    font-family: "sans-serif" ;
+
 
     
    
 }
 
-.heroSection > article > header > p { 
-    margin-bottom: 1.8rem;
-    font-size: 1rem;
-    font-weight: 600;
-}
-
 
 .heroButton {
-    padding: 10px 48px;
+    padding: 10px 40px; 
     border-radius: 100px;
     background: white ; 
     color: rgba(227, 71, 47, 0.988) ;
     border: 1px solid rgb(204, 137, 13) ;
-    font-size: 18px;
+    font-size: 18px; 
     font-weight: 800;
     margin-top: 50px;
     display: block;
     width: fit-content;
-    margin: auto ;
+    margin: 15% ; 
     transition: .3s ease-in-out;
     outline: none;
     
@@ -87,8 +86,9 @@ p {
 
    
 .heroSection .socialIcons {
-    justify-content: center;
-    margin-top: 40px;
+    justify-content: center; 
+    margin-top: 40px; 
+    
 }
 
 #heroheader {
@@ -181,19 +181,20 @@ footer {
     align-items: center ; 
     justify-content: center;
     padding: 20px ; 
-}
-
-.hero-video-container.video-section.video-section-1 {
+    background-color: ghostwhite ;
     
 }
+
+.video-section {
+    border: 5px solid ;
+    display: flex;
+    flex-direction: row;
+   
+}
+
 
 /* Small Laptop / Tablet Screens */
-@media screen and (min-width:  1500px) {
-    .heroOverlay {
-        background-position: 100% auto; 
-    }
-    
-}
+
 
 @media screen and (max-width: 1024px) {
     
@@ -202,7 +203,6 @@ footer {
         width: 90%;
         max-width: 1200px;
         margin: auto;
-        /* margin-top: 5vh;  */
         padding: 100px 0;
         text-align: center;
     }
@@ -215,7 +215,6 @@ footer {
         width: 90%;
         max-width: 100%;
         margin: auto;
-        /* margin-top: 5vh;  */
         padding: 100px 0;
         text-align: center;
     }
@@ -237,12 +236,11 @@ footer {
         width: 90%;
         max-width: 100%;
         margin: auto; 
-        /* padding: 100px 0; */
         text-align: center;
         
     }
     .heroSection > article > header > h1  {
-        font-size: 28px;
+        font-size: 30px;
          margin-top: 45px;  
         margin-right: 180px; 
         

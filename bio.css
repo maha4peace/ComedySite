@@ -5,8 +5,7 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
- /* background-color: blue;  */
-
+ 
 
   
 }
@@ -17,52 +16,39 @@
   background-image: url(./biopagebg-2.webp);
   background-size: cover ;
   background-repeat: no-repeat ;
-  background-position: left bottom ; 
-  display: flex ; 
-  margin-top: 13px ;
-  padding: 10px; 
+  background-position: left bottom; 
+  margin-top: 5% ; 
+  padding: 15px; 
   width: 100% ; 
-  height: 100vh ;
+  height: 100dvh ;
+
+  
 
 }
+
 
 .bioDetails {
-    display: flex ;
-    flex-direction: column ;
-    align-items: right ;
-    justify-content: right ;
-    margin: 95px auto;
+    display: flex ; 
+    justify-content: center; 
+    align-items: center; 
+    margin: 8% auto; 
     margin-right: 130px; 
-    padding: 4% 4% ;
+    padding: 4%;
     width: 90% ;
-    max-width: 500px ;
+    max-width: 600px ;
     font-weight: 700 ;
     text-align: center;
+    font-size: 1rem;
     
-  
 
   }
 
+@media screen and (min-height: 1024px) {
+  #bioDetails {
+    font-size: 20px; 
+  }
 
-
-@media screen and (max-width: 768px) {
-    .container {
-      background-position-x: left ; 
-
-    }
-
-    .bioDetails {
-      margin-right: 220px ; 
-    }
-
+  
 }
 
-@media screen and (max-width: 450px) {
-  
 
-  .bioDetails {
-    margin-right: 50px; 
-  }
-
-
-} 
