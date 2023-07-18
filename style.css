@@ -35,7 +35,7 @@ p {
     width: 100%;
     max-width: 100%;
     margin: auto; 
-    padding: 150px 150px; 
+    padding: 40px;
     text-align: center;
     
 }
@@ -186,9 +186,12 @@ footer {
 }
 
 .video-section {
-    border: 5px solid ;
+    /* border: 5px solid ; */
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
    
 }
 
