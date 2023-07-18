@@ -188,11 +188,14 @@ footer {
 
 .video-section {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center ; 
-    
-   
+    gap: 10px; 
+}
+
+iframe {
+    width: 100% ; 
 }
 
 
@@ -253,10 +256,6 @@ footer {
         margin-right: 150px; 
     }
 
-    iframe {
-        
-        width: 100%;
-      }
     
     .heroButton {
         padding: 10px; 
