@@ -40,6 +40,7 @@
   .navigation-items {
     display: flex;
     gap: 40px;
+   
   }
   .navigation-items > a {
     color: ghostwhite;
@@ -47,6 +48,7 @@
     font-weight: 500;
     font-size: 16px;
     transition: .4s ease-in-out;
+    font-family: "sans-serif";
   }
   .navigation-items > a:hover {
     color: white;

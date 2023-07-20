@@ -1,4 +1,4 @@
-*,body {
+*,body,html {
     padding: 0;
     margin: 0;
     -webkit-box-sizing: border-box;
@@ -18,13 +18,13 @@ p {
 
 /* Home page overlay */
 .heroOverlay {
-    background-image: url(./heropagebg-2.webp) ;
+    background-image: url(./herobgpage100.webp) ;
     background-size: cover;
-    background-position: center; 
+    background-position: 30%; 
     background-repeat: no-repeat ;
     width: 100% ; 
     height: 100dvh; 
-    border: 10px solid black ; 
+    border-bottom: 10px solid #940c0c; 
     
     
 }
@@ -40,7 +40,6 @@ p {
     
 }
 .heroSection > article.wrapper {
-    color: white ; 
     display: flex;  
     flex-direction: column;
     justify-content: flex-start ;
@@ -51,37 +50,38 @@ p {
 
 
 .heroSection > article > header > h1 {
-    font-size: 3vw;
+    font-size: 3.1vw;
     line-height: 50px; 
     font-family: "sans-serif" ;
-
-
-    
-   
+    color: rgba(197, 47, 24, 0.988) ;
 }
 
+div.heroLinks {
+    margin-left: 80px;
+}
 
 .heroButton {
     padding: 10px 40px; 
     border-radius: 100px;
-    background: white ; 
-    color: rgba(227, 71, 47, 0.988) ;
+    background: rgba(227, 71, 47, 0.988) ;
+    color: ghostwhite ; 
     border: 1px solid rgb(204, 137, 13) ;
     font-size: 18px; 
     font-weight: 800;
+    font-family: "sans-serif";
     margin-top: 50px;
     display: block;
     width: fit-content;
-    margin: 15% ; 
+    margin: 19% ; 
     transition: .3s ease-in-out;
     outline: none;
     
 }
 
 .heroButton:hover {
-    background: rgba(227, 71, 47, 0.988) ;
-    border: 1px solid rgb(230, 230, 230);
-    color:yellow ; 
+    background: ghostwhite ;
+    border: 1px solid rgba(227, 71, 47, 0.988) ;
+    color:rgba(227, 71, 47, 0.988) ;
    }
 
    
@@ -95,56 +95,62 @@ p {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
 }
 
+/* Shows Page Stlye */
 
 
-/* Review Section Styles - Strict Related Class Selectors*/
-.reviewSection {
-    margin-top: 10vh;
-}
-.reviewTitle {
+
+/* Video Page Styles - Strict Related Class Selectors*/
+
+.videoTitle {
     text-align: center;
     width: 90%;
     max-width: 500px;
-    padding-top: 50px; 
+    padding-top: 80px; 
     margin: auto;
-    margin-bottom: 64px;
+    
 
 }
-.reviewTitle h2 {
-    color: #da2c43;
-    font-size: 32px;
-    font-family: "Rock Salt";
-}
-.reviewContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 50px; 
-    gap: 20px;
-}
-.reviewBox {
+
+.videoBox {
     width: 90%;
     max-width: 900px;
-    padding: 2rem;
+    padding: 1rem;
     box-shadow: 0px 0px 5px rgb(230, 230, 230);
-    border-radius: 20px;
     transition: .3s ease-in-out;
+    font-weight: 500;
+    
 }
-.reviewBox:hover {
+.videoBox:hover {
     box-shadow: 0px 0px 15px rgb(230, 230, 230);
 }
-.reviewBoxTitle {
-    color: #da2c43;
-    font-size: 16px;
-    margin-bottom: 8px;
-    font-weight: 900;
+
+.videoBoxTitle {
+    font-size: 1em; 
 }
-.reviewStar {
-    color: #ffae42;
-    font-size: 18px;
-    font-weight: 900;
-    margin-bottom: 12px;
+
+.video-container {
+    display: flex;
+    flex-direction: column ; 
+    align-items: center ; 
+    justify-content: center;
+    padding: 20px ; 
+    gap: 20px;
+    text-align: center; 
+   
+    
+}
+
+.video-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center ; 
+    gap: 10px; 
+    width: 90% ; 
+}
+
+iframe {
+    width: 100% ; 
 }
 
 /* Footer styles applies to all pages */
@@ -153,7 +159,7 @@ footer {
     margin: auto; 
     background-color: rgb(204, 137, 13) ; 
     text-align: center;
-    color: white ; 
+    color: ghostwhite ;
     
 }
 
@@ -173,29 +179,6 @@ footer {
 }
 .socialIcons a img:hover {
     opacity: 0.7;
-}
-
-.hero-video-container {
-    display: flex;
-    flex-direction: column ; 
-    align-items: center ; 
-    justify-content: center;
-    padding: 20px ; 
-    background-color: ghostwhite ;
-    gap: 20px;
-    
-}
-
-.video-section {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center ; 
-    gap: 10px; 
-}
-
-iframe {
-    width: 100% ; 
 }
 
 
@@ -223,15 +206,35 @@ iframe {
         margin: auto;
         padding: 100px 0;
         text-align: center;
+       
     }
+
+
+
+.heroSection > article > header > h1#heroheader {
+    margin-right: 260px; 
+    font-size: 5vw;
+}
+
+div.heroLinks {
+    margin-left: 0 ; 
+}
+
+.video-section {
+    display: flex ;
+    flex-direction: column;
+
+
+}
+
 }
 
 /* Mobile Screens */
   @media screen and (max-width: 575px) {
     .heroOverlay {
-        background-image: url(./heropagebg-2.webp) ;
+        background-image: url(./herobgpage100.webp) ;
         background-size: cover;
-        background-position: center center; 
+        background-position: 42%; 
         background-repeat: no-repeat ;
         width: 100% ; 
         
@@ -245,17 +248,16 @@ iframe {
         text-align: center;
         
     }
-    .heroSection > article > header > h1  {
-        font-size: 30px;
-         margin-top: 45px;  
+    .heroSection > article > header > h1#heroheader  {
+        font-size: 7vw;
+        margin-top: 45px;  
         margin-right: 180px; 
         
     }
 
-    .heroLinks {
-        margin-right: 150px; 
+    div.heroLinks {
+        margin-left: -15px ; 
     }
-
     
     .heroButton {
         padding: 10px; 
