@@ -6,46 +6,44 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     font-family: 'Martel Sans', sans-serif;
-
   
 }
 
+main.bioSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%; 
+  margin-top: 5% ; 
+  padding: 2rem;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
 
-.container {
-  background-image: url(./biopagebg-2.webp);
-  background-size: cover;
-  background-repeat: no-repeat ;
-  background-position: left bottom; 
-  padding: 15px; 
-  width: 100% ; 
-  height: 100vh; 
+.bioHeader {
+  font-size: 5vw;
+  text-align: center;
+  padding: 2rem;
+ }
 
+section > img.bioImage {
+  width: 100%; 
+  height: auto ; 
+  
+ 
 }
 
 
-.bioDetails {
-    display: flex ; 
-    justify-content: center; 
-    align-items: center; 
-    margin: 11% auto; 
-    margin-right: 160px; 
-    padding: 4%;
-    width: 90% ;
-    max-width: 600px ;
+section.bioDetails {
+    padding: 2rem;
     font-weight: 300 ;
     text-align: center;
-    font-size: 1rem;
-
-    
-
-  }
-
-@media screen and (min-height: 1024px) {
-  #bioDetails {
-    font-size: 20px; 
-  }
-
+    font-size: 2vw ;
   
-}
+
+  }
+
+
 
 
