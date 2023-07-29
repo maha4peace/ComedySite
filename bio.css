@@ -16,7 +16,7 @@ main.bioSection {
   align-items: center;
   width: 90%; 
   margin-top: 5% ; 
-  padding: 2rem;
+  padding: 2rem; 
   padding-bottom: 0;
   margin-bottom: 0;
 }
@@ -34,7 +34,6 @@ section > img.bioImage {
  
 }
 
-
 section.bioDetails {
     padding: 2rem;
     font-weight: 300 ;
@@ -44,6 +43,5 @@ section.bioDetails {
 
   }
 
-
-
+  
 
