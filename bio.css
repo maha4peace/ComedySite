@@ -14,17 +14,19 @@ main.bioSection {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 90%; 
-  margin-top: 5% ; 
-  padding: 2rem; 
-  padding-bottom: 0;
+  margin: auto; 
   margin-bottom: 0;
+  padding: 2rem; 
+  padding-top: 4rem;
+  padding-bottom: 0;
+  font-size: 3vw; 
+ 
 }
 
 .bioHeader {
   font-size: 5vw;
   text-align: center;
-  padding: 2rem;
+  padding-top: 2rem;
  }
 
 section > img.bioImage {
