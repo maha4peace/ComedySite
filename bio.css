@@ -6,7 +6,12 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     font-family: 'Martel Sans', sans-serif;
+   
   
+}
+
+main {
+  min-height: 100vh;
 }
 
 main.bioSection {
@@ -20,6 +25,7 @@ main.bioSection {
   padding-top: 4rem;
   padding-bottom: 0;
   font-size: 3vw; 
+
  
 }
 
