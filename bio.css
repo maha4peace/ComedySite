@@ -28,14 +28,15 @@ main.bioSection {
 section.bioDetails {
   padding: 2rem;
   font-weight: 300 ;
-  text-align: center;
+  width: 90%; 
 }
 
 
 main.bioSection > section.bioDetails > p {
   font-size: 2vw; 
   margin-top: 2em; 
-  text-align: center;
+  text-align: center; 
+ 
 }
 
 section > img.bioImage {
@@ -46,4 +47,8 @@ section > img.bioImage {
 
 
   
-
+@media screen and (max-width: 575px) {
+  main.bioSection > section.bioDetails > p {
+    font-size: 3.5vw ; 
+  }
+}
