@@ -6,6 +6,7 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     font-family: 'Martel Sans', sans-serif;
+    
    
   
 }
@@ -14,42 +15,35 @@ main {
   min-height: 100vh;
 }
 
+
 main.bioSection {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: auto; 
-  margin-bottom: 0;
-  padding: 2rem; 
-  padding-top: 4rem;
-  padding-bottom: 0;
-  font-size: 3vw; 
-
- 
+  padding: 20px; 
 }
 
-.bioHeader {
-  font-size: 5vw;
+section.bioDetails {
+  padding: 2rem;
+  font-weight: 300 ;
   text-align: center;
-  padding-top: 2rem;
- }
+}
+
+
+main.bioSection > section.bioDetails > p {
+  font-size: 2.5vw; 
+  margin-top: 2em; 
+  text-align: center;
+}
 
 section > img.bioImage {
   width: 100%; 
   height: auto ; 
-  
- 
+  margin-bottom: 0; 
 }
 
-section.bioDetails {
-    padding: 2rem;
-    font-weight: 300 ;
-    text-align: center;
-    font-size: 2vw ;
-  
-
-  }
 
   
 
